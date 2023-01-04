@@ -5,10 +5,137 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My first repo</title>
+    <style>
+        label{
+            display: block;
+            margin-bottom: 10px;
+        }
+        nav>ul{
+            display: flex;
+        }
+        nav li{
+            list-style: none;
+            margin-right: 15px;
+            transition: 200ms;
+            padding: 0px 5px;
+        }
+        nav li a{
+            text-decoration: none;
+            color: blueviolet;
+        }
+        nav li:hover{
+            background-color: gray;
+            letter-spacing: 2px;
+        }
+        nav li .drop{
+            display: none;
+            position: absolute;
+            background-color: burlywood;
+            padding-left: 5px;
+            margin-left: 5px;
+        }
+        nav li:hover>.drop{
+            display: block;
+        }
+
+
+    </style>
 </head>
 <body>
-    <p>My first git and version control test</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim repudiandae quos expedita.</p>
-    <H1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium deserunt atque eligendi eveniet? Numquam architecto nobis molestiae eos, autem ipsum reiciendis. Fuga eos quos repudiandae.</H1>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Mission</a></li>
+            <li><a href="#">Meet the team</a>
+                <ul class="drop">
+                    <li><a href="#">SpO2</a></li>
+                    <li><a href="#">Venus</a>
+                        <ul class="drop">
+                            <li><a href="#">BS1</a></li>
+                            <li><a href="#">SPARSO</a></li>
+                            <li><a href="#">IMMERSET</a></li>
+                            <li><a href="#">EUTELSAT</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">APSTAR</a></li>
+                    <li><a href="#">Voyger</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Portfolio</a>
+                <ul class="drop">
+                    <li><a href="#">BS1</a></li>
+                    <li><a href="#">SPARSO</a></li>
+                    <li><a href="#">IMMERSET</a></li>
+                    <li><a href="#">EUTELSAT</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <section>
+        <article class="blog">
+            <h3>My Blog - 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem at quibusdam commodi nam reprehenderit! At, culpa praesentium. Dolor nobis quaerat illum quod natus nemo consequuntur ad explicabo nam quam, deleniti necessitatibus totam temporibus, dolorum architecto delectus ex autem. Doloribus, blanditiis distinctio ipsum, provident illo illum odio, voluptas voluptatem molestiae nulla expedita ratione inventore culpa voluptatum sapiente! Omnis nobis architecto distinctio quam pariatur qui repudiandae ipsam.</p>
+        </article>
+        <article class="blog">
+            <h3>My Blog - 2</h3>
+            <p>Deleniti ullam eius in quos quia voluptate nesciunt doloribus consequatur ea vitae aliquid voluptas omnis, labore eaque harum similique quo praesentium exercitationem? Nobis eos nam itaque dolor debitis suscipit minima in ipsa ad, deleniti libero aliquid nemo quaerat inventore. Deleniti vero sit tempore modi quod? Debitis a perferendis enim id. Rem doloribus fugit voluptates, ex asperiores perferendis sit deleniti magnam omnis velit, amet, tempore nobis.</p>
+        </article>
+        <article class="blog">
+            <h3>My Blog - 3</h3>
+            <p>Facilis pariatur dolor eius, obcaecati sunt neque consectetur quos veniam id quae incidunt natus unde totam, labore voluptatum magnam illum! Optio numquam voluptatibus doloremque odit! Temporibus laborum, veniam nulla rem iste repudiandae ullam cupiditate quam beatae molestiae facilis rerum cum totam voluptate dignissimos dolores, sit dolorum itaque saepe deleniti a sed nisi, nihil accusantium! Sit unde consequatur fuga esse quis quidem modi nobis atque. Ad?</p>
+        </article>
+        <article class="blog">
+            <h3>My Blog - 4</h3>
+            <p>Sit corrupti voluptatum unde non maxime error velit magnam labore ratione veritatis sed rerum vel nihil obcaecati quasi autem odio enim, laborum, explicabo quia officia voluptatem. Tempore quam ducimus totam natus ipsam placeat facere expedita, iure illum molestiae aut fugit officia quasi provident veritatis iusto quo voluptatibus porro qui praesentium veniam quia, nesciunt earum voluptates. Voluptatum eos beatae excepturi quos odit modi ipsam ducimus temporibus?</p>
+        </article>
+        <article class="blog">
+            <h3>My Blog - 5</h3>
+            <p>Facilis, est aliquam soluta ipsum magni error. Quis nihil perspiciatis totam. Deserunt, ut debitis voluptas quam impedit molestiae eaque quod. Voluptatem, dolores. Quis odio dolorem voluptatem possimus eaque, aspernatur veniam voluptates amet maxime tempore, soluta voluptatum mollitia voluptatibus voluptas reiciendis voluptate ullam corporis nobis ratione suscipit necessitatibus et. Quae neque, veritatis sit voluptatum unde magnam consectetur magni id perferendis doloremque quo, repellat culpa ea illo!</p>
+        </article>
+    </section>
+    <form action="">
+        <label for="user_name" placeholder="John Walker">Your Name 
+            <input type="text">
+        </label>
+        <label for="email">Your Email 
+            <input type="email" placeholder="xyz@email.com">
+        </label>
+        <label for="phone">Phone 
+            <input type="number" placeholder="+880123456789">
+        </label>
+        <fieldset>
+            <legend>Who invented computer?</legend>
+            <label for="John">
+                <input type="radio" name="q1" id="Jhon"> John wick
+            </label>
+            <label for="Bill">
+                <input type="radio" name="q1" id="Bill"> Bill Gates
+            </label>
+            <label for="steve">
+                <input type="radio" name="q1" id="steve"> Steve Jobs
+            </label>
+            
+        </fieldset>
+        <fieldset>
+            <legend>Hou many programming language you know ?</legend>
+            <label for="c">
+                <input type="checkbox" name="q2" id="c"> C#
+            </label>
+            <label for="java">
+                <input type="checkbox" name="q2" id="java"> java
+            </label>
+            <label for="html">
+                <input type="checkbox" name="q2" id="html"> HTML5
+            </label>
+            
+        </fieldset>
+        <fieldset>
+            <legend>Write your comment </legend>
+            <textarea name="" id="" cols="30" rows="10" placeholder="write here..."></textarea>
+        </fieldset>
+        <input type="reset" value="Reset">
+        <input type="text" value="Submit">
+    </form>
 </body>
 </html>
